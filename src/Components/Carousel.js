@@ -12,12 +12,12 @@ function Carousel() {
 const handleClick=(direction)=>{
   console.log('handleClick');
   if(direction ==='left'){
-setSliderIndex(sliderIndex > 0 ? sliderIndex-1 : 30)
+setsliderIndex(sliderIndex > 0 ? sliderIndex-1 : 30)
   }else{
-    setSliderIndex(sliderIndex < 30 ? sliderIndex+1 : 0)
+    setsliderIndex(sliderIndex < 30 ? sliderIndex+1 : 0)
   }
 }
-const [sliderIndex, setSliderIndex] = useState(0);
+const [sliderIndex, setsliderIndex] = useState(0);
 
 
   return (
@@ -60,7 +60,6 @@ export default Carousel
 const Container = styled.div`
 height: 80vh;
 display: flex;
-position: relative;
 overflow: hidden;
 background:linear-gradient(120deg, #ff9900, #146eb4);
 `
