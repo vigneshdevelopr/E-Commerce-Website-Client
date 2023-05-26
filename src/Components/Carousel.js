@@ -38,9 +38,7 @@ const [sliderIndex, setSliderIndex] = useState(0);
 <Title>{items.title}</Title>
         <Description>{items.description}</Description>
         <Description>Price: {items.price}/-</Description>
-        <Button onClick={
-          ()=>handleClick()
-        }>Buy</Button>
+        <Button>Buy</Button>
 </InfoCarousel>
 </MainCarousel>
         ))}
