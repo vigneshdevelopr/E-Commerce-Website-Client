@@ -7,17 +7,17 @@ import { data } from './Data';
 
 function Carousel() {
 
+  const [sliderindex, setsliderindex] = useState(0);
 
 //Functionality's
 const handleClick=(direction)=>{
   console.log('handleClick');
   if(direction ==='left'){
-setsliderIndex(sliderIndex > 0 ? sliderIndex-1 : 30)
+setsliderindex(sliderindex > 0 ? sliderindex-1 : 30)
   }else{
-    setsliderIndex(sliderIndex < 30 ? sliderIndex+1 : 0)
+    setsliderindex(sliderindex < 30 ? sliderindex+1 : 0)
   }
 }
-const [sliderIndex, setsliderIndex] = useState(0);
 
 
   return (
@@ -25,7 +25,7 @@ const [sliderIndex, setsliderIndex] = useState(0);
       <ArrowArea direction="left" onClick={()=>handleClick('left')}>
 <ArrowLeftOutlined />
       </ArrowArea>
-      <Wrapper sliderIndex={sliderIndex}>
+      <Wrapper sliderindex={sliderindex}>
         {data.map(items=>(
           <MainCarousel key={items.id}>
 <ImgCarousel>
@@ -61,6 +61,7 @@ const Container = styled.div`
 height: 80vh;
 display: flex;
 overflow: hidden;
+position: relative;
 background:linear-gradient(120deg, #ff9900, #146eb4);
 `
 const ArrowArea = styled.div`
@@ -86,7 +87,7 @@ z-index: 2;
 const Wrapper = styled.div`
 height: 100%;
 display: flex;
-transform: translateX(${props=>props.sliderIndex * -100}vw);
+transform: translateX(${props=>props.sliderindex * -100}vw);
 transition: all 1.5s ease;
 `
 const MainCarousel = styled.div`
