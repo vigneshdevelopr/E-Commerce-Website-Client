@@ -1,14 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
 
-import { ArrowLeftOutlined, ArrowRightOutlined } from '@mui/icons-material';
 import { data } from './Data';
 
 function Carousel() {
-
   const [sliderIndex, setSliderIndex] = useState(0);
   const [isButtonHovered, setIsButtonHovered] = useState(false);
-
 
   const handleClick = (direction) => {
     if (direction === 'left') {
@@ -21,6 +18,7 @@ function Carousel() {
       );
     }
   };
+
   const handleButtonHover = (isHovered) => {
     setIsButtonHovered(isHovered);
   };
@@ -29,11 +27,9 @@ function Carousel() {
     const interval = setInterval(() => {
       if (!isButtonHovered) {
         setSliderIndex((prevIndex) =>
-        prevIndex < data.length - 1 ? prevIndex + 1 : 0
-      );
+          prevIndex < data.length - 1 ? prevIndex + 1 : 0
+        );
       }
-
-     
     }, 3000);
 
     return () => clearInterval(interval);
@@ -41,9 +37,6 @@ function Carousel() {
 
   return (
     <Container>
-      <ArrowArea direction="left" onClick={() => handleClick('left')}>
-        <ArrowLeftOutlined />
-      </ArrowArea>
       <Wrapper sliderIndex={sliderIndex}>
         {data.map((item) => (
           <MainCarousel key={item.id}>
@@ -59,13 +52,11 @@ function Carousel() {
                 onMouseLeave={() => handleButtonHover(false)}
               >
                 Buy
-              </Button>            </InfoCarousel>
+              </Button>
+            </InfoCarousel>
           </MainCarousel>
         ))}
       </Wrapper>
-      <ArrowArea direction="right" onClick={() => handleClick('right')}>
-        <ArrowRightOutlined />
-      </ArrowArea>
     </Container>
   );
 }
@@ -78,27 +69,7 @@ const Container = styled.div`
   display: flex;
   overflow: hidden;
   position: relative;
-  width: 100%;
   background: linear-gradient(120deg, #ff9900, #146eb4);
-`;
-
-const ArrowArea = styled.div`
-  width: 50px;
-  height: 50px;
-  background-color: whitesmoke;
-  border-radius: 50%;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  opacity: 0.5;
-  position: absolute;
-  margin: auto;
-  top: 0;
-  bottom: 0;
-  left: ${(props) => (props.direction === 'left' ? '30px' : '')};
-  right: ${(props) => (props.direction === 'right' ? '30px' : '')};
-  z-index: 2;
 `;
 
 const Wrapper = styled.div`
