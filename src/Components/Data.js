@@ -574,3 +574,56 @@ export const data = [
       ],
     },
   ];
+
+  export const Category = [
+{
+  id: '1',
+  title:'Mobiles and Accessories',
+  images:'https://cdn.zeebiz.com/sites/default/files/styles/zeebiz_850x478/public/2017/05/22/19144-online-shoppingnomura-report.jpg?itok=uoLpXtTY'
+},
+{
+  id: '2',
+  title:'Personal Grooming',
+  images:'https://www.managementstudyhq.com/wp-content/uploads/2020/12/Maintain-Your-Hairstyle.jpg'
+},
+{
+  id: '3',
+  title:'Clothing',
+  images:'https://thumbs.dreamstime.com/b/men-shirt-display-mannequin-clothes-shop-trendy-cotton-summer-collection-fashion-product-samples-clothing-store-selling-177634234.jpg'
+}
+  ]
+
+  export const popularProducts = [
+    {
+      id:1,
+      img:"https://d3o2e4jr3mxnm3.cloudfront.net/Mens-Jake-Guitar-Vintage-Crusher-Tee_68382_1_lg.png",
+    },
+    {
+      id:2,
+      img:"https://fdn2.gsmarena.com/vv/pics/apple/apple-iphone-14-pro-max-1.jpg",
+    },
+    {
+      id:3,
+      img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHlecyN5DL6OePZq2vKMd-Bt40BwuoaJXSDRyvI2Sw&s",
+    },
+    {
+      id:4,
+      img:"https://vid.alarabiya.net/images/2023/04/10/1dd6964b-e329-4767-8764-7292c23ef224/1dd6964b-e329-4767-8764-7292c23ef224.jpg?width=801&format=jpg",
+    },
+    {
+      id:5,
+      img:"https://assets.gqindia.com/photos/5f0860c4532fa7831d9d6df9/master/w_866,h_956,c_limit/No.1%20Imperial%20Majesty%20-%20Clive%20Christian.jpg",
+    },
+    {
+      id:6,
+      img:"https://d3o2e4jr3mxnm3.cloudfront.net/Rocket-Vintage-Chill-Cap_66374_1_lg.png",
+    },
+    {
+      id:7,
+      img:"https://cdn.shopify.com/s/files/1/2083/6627/files/Tibaldi_Fulgor_Nocturnus_480x480.jpg?v=1676649428",
+    },
+    {
+      id:8,
+      img:"https://www.pngarts.com/files/3/Women-Jacket-PNG-High-Quality-Image.png",
+    },
+  ]

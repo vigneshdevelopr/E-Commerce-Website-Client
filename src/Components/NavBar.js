@@ -8,7 +8,7 @@ function NavBar() {
     //styling:
     const Container = styled.div`
     height: 60px;
-    background-color:white;
+    background-color:transparent;
     `
 
 
@@ -29,6 +29,7 @@ text-align: center;
 `
 const InputArea= styled.input`
 border:none;
+background-color: transparent;
 `
 
 const RightArea = styled.div`
@@ -62,7 +63,7 @@ margin-left: 25px;
 <LeftArea>
     <LangSelect>EN</LangSelect>
     <SearchBar>
-        <InputArea />
+        <InputArea placeholder='Search Here' />
         <SearchIcon style={{color:'gray',fontSize:'20px'}} />
 
     </SearchBar>

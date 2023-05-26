@@ -27,7 +27,7 @@ const [sliderIndex, setSliderIndex] = useState(0);
       </ArrowArea>
       <Wrapper sliderIndex={sliderIndex}>
         {data.map(items=>(
-          <MainCarousel>
+          <MainCarousel key={items.id}>
 <ImgCarousel>
 <Images src={items.images[0]}>
 
@@ -60,12 +60,11 @@ export default Carousel
 
 //styling:
 const Container = styled.div`
-height: 100vh;
-width: 100vw;
+height: 80vh;
 display: flex;
 position: relative;
-background-color: beige;
 overflow: hidden;
+background:linear-gradient(120deg, #ff9900, #146eb4);
 `
 const ArrowArea = styled.div`
 width: 50px;

@@ -4,7 +4,7 @@ import { styled } from 'styled-components'
 function Announcements() {
 //styling
 const Container = styled.div`
-background-color:lightsalmon;
+background-color:#2E729F;
 color:white;
 display: flex;
 align-items: center;
