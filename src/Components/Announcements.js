@@ -1,5 +1,6 @@
 import React from 'react'
 import { styled } from 'styled-components'
+import { mobile } from './Responsive'
 
 function Announcements() {
 //styling
@@ -12,11 +13,12 @@ justify-content: center;
 font-size: 20px;
 font-weight: 450;
 height: 2rem;
+${mobile({height:'2cm'})}
 `
 
   return (
     <Container>
-Hey! Don't Miss the Big Saving Days Deals
+Hey Guys! Don't Miss the Big Saving Days Deals
     </Container>
   )
 }

@@ -2,22 +2,13 @@ import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
 
 import { data } from './Data';
+import { mobile } from './Responsive';
 
 function Carousel() {
   const [sliderIndex, setSliderIndex] = useState(0);
   const [isButtonHovered, setIsButtonHovered] = useState(false);
 
-  const handleClick = (direction) => {
-    if (direction === 'left') {
-      setSliderIndex((prevIndex) =>
-        prevIndex > 0 ? prevIndex - 1 : data.length - 1
-      );
-    } else {
-      setSliderIndex((prevIndex) =>
-        prevIndex < data.length - 1 ? prevIndex + 1 : 0
-      );
-    }
-  };
+ 
 
   const handleButtonHover = (isHovered) => {
     setIsButtonHovered(isHovered);
@@ -70,6 +61,8 @@ const Container = styled.div`
   overflow: hidden;
   position: relative;
   background: linear-gradient(120deg, #ff9900, #146eb4);
+  ${mobile({ display: "none" })}
+
 `;
 
 const Wrapper = styled.div`

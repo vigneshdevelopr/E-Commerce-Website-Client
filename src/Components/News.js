@@ -1,6 +1,7 @@
 import { Send } from '@mui/icons-material'
 import React from 'react'
 import { styled } from 'styled-components'
+import { mobile } from './Responsive'
 
 function News() {
     
@@ -34,11 +35,15 @@ flex-direction: column;
 const Title = styled.h1`
 font-size: 70px;
 margin-bottom: 20px;
+${mobile({ fontSize:"larger" })}
+
 `
 const Description = styled.div`
 font-size: 24px;
 font-weight: 200;
 margin-bottom: 20px;
+${mobile({ textAlign: "center" })}
+
 
 `
 const InputContainer = styled.div`
@@ -47,6 +52,9 @@ height: 40px;
 display: flex;
 justify-content: space-between;
 border: 0.5px solid lightgray;
+
+${mobile({ width: "80%" })}
+
 
   
 `
