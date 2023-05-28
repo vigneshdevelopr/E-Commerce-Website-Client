@@ -61,7 +61,9 @@ const Container = styled.div`
   overflow: hidden;
   position: relative;
   background: linear-gradient(120deg, #ff9900, #146eb4);
-  ${mobile({ display: "none" })}
+  @media screen and (max-width: 500px){
+    display: none;
+  }
 
 `;
 
