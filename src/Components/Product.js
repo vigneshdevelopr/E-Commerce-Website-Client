@@ -73,7 +73,7 @@ const Icon = styled.div`
  width: 40px;
  height: 40px;
  border-radius: 50%;
- background-color: whitesmoke;
+ background-color: black;
  display: flex;
  align-items: center;
  justify-content: center;
@@ -82,7 +82,7 @@ const Icon = styled.div`
  transition: all 0.4s ease-in-out;
 
  &:hover{
-  background-color: white;
+  background-color: #521383;
   transform: scale(1.1);  //zoom in and out maari varum 
 
  }

@@ -6,6 +6,7 @@ import Products from './Pages/Products';
 import Login from './Pages/Login';
 import FinalCart from './Pages/FinalCart';
 import Signup from './Pages/Signup';
+import ErrPage from './Pages/ErrPage';
 
 function App() {
   return (
@@ -28,6 +29,9 @@ function App() {
   </Route>
   <Route  path='/cart'>
 <FinalCart />
+  </Route>
+  <Route  path='**'>
+<ErrPage />
   </Route>
   
 </Switch>

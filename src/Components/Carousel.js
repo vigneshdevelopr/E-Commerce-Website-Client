@@ -60,7 +60,8 @@ const Container = styled.div`
   display: flex;
   overflow: hidden;
   position: relative;
-  background: linear-gradient(120deg, #ff9900, #146eb4);
+  /* background:linear-gradient(120deg, #6f1ab1, #000000); */
+background-color: transparent;
   @media screen and (max-width: 500px){
     display: none;
   }

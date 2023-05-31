@@ -42,7 +42,7 @@ export default NavBar
  //styling:
  const Container = styled.div`
  height: 60px;
- background-color:transparent;
+ background-color:#252525;
 
 ${mobile({height: "70px"})}
 
@@ -69,7 +69,7 @@ text-align: center;
 `
 const InputArea= styled.input`
 border:none;
-background-color: transparent;
+background-color: white;
 ${mobile({ width: "50px" })}
 
 `
@@ -89,11 +89,13 @@ ${mobile({ display: "none" })}
 
 `
 const SearchBar = styled.span`
+background-color: white;
 border: 0.5px solid grey;
 display: flex;
 align-items: center;
 margin-left: 25px;
 padding: 5px;
+border-radius: 9px;
 `
 const Logo = styled.h1`
 font-family: 'Dancing Script', cursive;

@@ -28,7 +28,8 @@ function HomePage() {
 export default HomePage
 //styling:
 const Container = styled.div`
-background:linear-gradient(120deg, #ff9900, #146eb4);
+background:linear-gradient(120deg, #6f1ab1, #000000);
 background-repeat: repeat;
+color: antiquewhite;
 
 `
