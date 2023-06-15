@@ -7,6 +7,8 @@ import Login from './Pages/Login';
 import FinalCart from './Pages/FinalCart';
 import Signup from './Pages/Signup';
 import ErrPage from './Pages/ErrPage';
+import PaymentPage from './Pages/PaymentPage';
+import PaymentSuccess from './Pages/PaymentSuccess';
 
 function App() {
   return (
@@ -29,6 +31,12 @@ function App() {
   </Route>
   <Route  path='/cart'>
 <FinalCart />
+  </Route>
+  <Route  path='/pay'>
+<PaymentPage />
+  </Route>
+  <Route  path='/paysucess'>
+<PaymentSuccess />
   </Route>
   <Route  path='**'>
 <ErrPage />
